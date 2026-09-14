@@ -51,12 +51,17 @@ draw = ImageDraw.Draw(img)
 image_font = ImageFont.truetype("arial.ttf", 40)
 
 #teraz cisla a linie cez stvorceky
+draw.line((0, 210, 630, 210), fill="black", width=4)
 for i in range(9):
     for j in range(9):
         draw.rectangle((i*70, j*70, (i+1)*70, (j+1)*70), outline="black", width=2)
+        
         if sudoku[j][i] != 0:
             draw.text((i*70 + 20, j*70 + 10), str(sudoku[j][i]), fill="black", font=image_font)
             
-
+draw.line((0, 210, 630, 210), fill="black", width=8)
+draw.line((210,0,210,630), fill="black", width=8)
+draw.line((420, 0, 420, 630), fill="black", width=8)
+draw.line((0, 420, 630, 420), fill="black", width=8)
 
 img.show()
