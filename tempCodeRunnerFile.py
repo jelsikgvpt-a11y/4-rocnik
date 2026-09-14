@@ -26,10 +26,3 @@ def checkit(x,y):
                     return False
     return True
         
-
-        
-        
-        
-createchessboard()
-chessboard[2][3] = 1
-print(checkit(4,3))
