@@ -50,22 +50,13 @@ img = Image.new("RGB", (630, 630), "white")
 draw = ImageDraw.Draw(img)
 image_font = ImageFont.truetype("arial.ttf", 40)
 
-#teraz cisla a linie
-for i in range(10):
-    if i % 3 == 0:
-        draw.line((i*70, 0, i*70, 630), fill="black", width=5)
-        draw.line((0, i*70, 630, i*70), fill="black", width=5)
-    else:
-        draw.line((i*70, 0, i*70, 630), fill="black", width=2)
-        draw.line((0, i*70, 630, i*70), fill="black", width=2)
-        
-for y in range(9):
-    for x in range(9):
-        if sudoku[y][x] != 0:
-            draw.text((x*70 + 20, y*70 + 10), str(sudoku[y][x]), fill="black", font=image_font)
+#teraz cisla a linie cez stvorceky
+for i in range(9):
+    for j in range(9):
+        draw.rectangle((i*70, j*70, (i+1)*70, (j+1)*70), outline="black", width=2)
+        if sudoku[j][i] != 0:
+            draw.text((i*70 + 20, j*70 + 10), str(sudoku[j][i]), fill="black", font=image_font)
             
-
-
 
 
 img.show()
