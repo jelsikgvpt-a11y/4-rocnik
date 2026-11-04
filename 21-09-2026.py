@@ -12,6 +12,8 @@ def trojuholnik (a,x,y):
         canvas.create_line(x+a,y, x+a//2,y-(a**2-(a**2)/4)**0.5, fill ="yellow")
         trojuholnik(a//2,x,y)
         trojuholnik(a//2,x+a//2,y)
+        trojuholnik(a//2,x+a//4,y)
+            
         
     
     

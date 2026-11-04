@@ -1,0 +1,29 @@
+{
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.tabCompletion": "on",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.suggest.showWords": true,
+    "editor.suggest.showMethods": true,
+    "editor.suggest.showFunctions": true,
+    "editor.suggest.showVariables": true,
+    "editor.suggest.showClasses": true,
+    "editor.suggest.showSnippets": true,
+    "editor.wordBasedSuggestions": "allDocuments",
+    "[python]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        },
+        "editor.suggestOnTriggerCharacters": true,
+        "editor.tabCompletion": "on"
+    },
+    "python.analysis.autoImportCompletions": true
+}
