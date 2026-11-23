@@ -1,6 +1,6 @@
 import random,sqlite3
 
-connection = sqlite3.connect('D:/škola/Richard Zilinec/pokusna.db')
+connection = sqlite3.connect("studenti.db")
 cursor = connection.cursor()
 oci =  ['modra','hneda','zelena']
 
